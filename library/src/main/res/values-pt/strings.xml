@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">jsonwizard</string>
+    <string name="action_settings">Configuração</string>
+    <string name="hello_world">Olá Mundo</string>
+    <string name="next_string">Próximo</string>
+    <string name="save_string">Salvar</string>
+    <string name="confirm_dialog_message">Tem certeza que seus dados estão corretos?</string>
+    <string name="confirm_dialog_tittle">Confirme os Dados</string>
+    <string name="masc_label">Masculino</string>
+    <string name="fem_label">Feminino</string>
+</resources>

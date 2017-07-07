@@ -1,0 +1,74 @@
+{
+    "count":"1",
+    "step1":{
+        "fields":[
+            {
+                "key":"document",
+                "type":"edit_text",
+                "hint":"CPF",
+                "v_required" : {
+                    "value" : "true",
+                    "err" : "Você precisa preencher este campo."
+                },
+                "v_min_length":{  "value" : "3",
+                    "err" : "Min length should be at least 3"
+                },
+                "v_max_length":{  "value" : "20",
+                    "err" : "Max length can be at most 10."
+                }
+            },
+            {
+                "key":"name",
+                "type":"edit_text",
+                "hint":"Nome",
+                "v_required" : {
+                    "value" : "true",
+                    "err" : "Você precisa preencher este campo."
+                },
+                "v_min_length":{  "value" : "5",
+                    "err" : "Um nome deve ter mais de 5 caracteres."
+                },
+                "v_max_length":{  "value" : "100",
+                    "err" : "O tamanho máximo permitido é de 100 caracteres."
+                }
+            },
+            {
+                "key":"birthday",
+                "type":"edit_text",
+                "hint":"Data de Nascimento (dd/mm/aaaa)",
+                "v_required" : {
+                    "value" : "true",
+                    "err" : "Você precisa preencher este campo."
+                },
+                "v_min_length":{  "value" : "10",
+                    "err" : "Formato correto: dd/mm/aaaa"
+                },
+                "v_max_length":{  "value" : "10",
+                    "err" : "Formato correto: dd/mm/aaaa"
+                },
+                "v_regex":{
+                    "value":"^([0-2][0-9]||3[0-1])/(0[0-9]||1[0-2])/([0-9][0-9])?[0-9][0-9]$",
+                    "err" : "Formato correto: dd/mm/aaaa"
+                }
+            },
+            {
+                "key":"sex",
+                "type":"radio",
+                "label":"Sexo",
+                "options":[
+                    {
+                        "key":"male",
+                        "text":"Masculino"
+                    },
+                    {
+                        "key":"female",
+                        "text":"Feminino"
+                    }
+                ],
+                "value":"male"
+            }
+
+        ],
+        "title":"Dados do Paciente"
+    }
+}
